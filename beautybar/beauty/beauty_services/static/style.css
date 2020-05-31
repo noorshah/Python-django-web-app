@@ -24,8 +24,8 @@ border: 2px solid #ff8080;
 margin: 150px;
 right: 400px;
 background-color: white;
-max-width: 320px;
-height: 190px;
+max-width: 330px;
+height: 210px;
 }
 
 div.autocomplete {
@@ -33,11 +33,12 @@ div.autocomplete {
  font-size: 16px;
  display: inline-block;
 }
-
-label {
-font-family: "Georgia", Times, serif;
-color: #ff8080;
-font-size: 25px;
+input[type=text] {
+margin: 8px 0;
+padding: 8px 62px;
+border: 2px solid #ff8080;
+border-radius: 4px;
+background-color: #f2f2f2;
 }
 
 input[value=search] {
@@ -45,6 +46,7 @@ background-color: #ff8080;
 font-family: "Georgia", Times, serif;
 font-size: 30px;
 color: #F7E9F4;
-margin: 5px;
-padding: 8px 92px;
+margin: 1px;
+padding: 8px 103px;
+border-radius: 4px;
 }
