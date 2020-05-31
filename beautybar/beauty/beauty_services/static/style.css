@@ -1,0 +1,50 @@
+body {
+background-image: url("makeup.jpg");
+background-size: cover;
+}
+
+.navbar.navbar-expand-lg.navbar-light {
+background-color:white;
+}
+
+h3 {
+text-align: center;
+color: #ff8080;
+font-family: "Georgia", Times, serif;
+}
+
+a {
+color: #ff8080;
+}
+
+form.container {
+position: absolute;
+border-radius: 5px;
+border: 2px solid #ff8080;
+margin: 150px;
+right: 400px;
+background-color: white;
+max-width: 320px;
+height: 190px;
+}
+
+div.autocomplete {
+ position: relative;
+ font-size: 16px;
+ display: inline-block;
+}
+
+label {
+font-family: "Georgia", Times, serif;
+color: #ff8080;
+font-size: 25px;
+}
+
+input[value=search] {
+background-color: #ff8080;
+font-family: "Georgia", Times, serif;
+font-size: 30px;
+color: #F7E9F4;
+margin: 5px;
+padding: 8px 92px;
+}

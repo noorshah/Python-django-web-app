@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% block page_content %}
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>>
+<title>BEAUTYBAR</title>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color:#d14b74">
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#mainNavBar"  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button><!--Logo-->
+    <a href="{% url 'beauty_services' %}" class="navbar-brand"><h3 style="color: white">BEAUTYBAR</h3></a>
+    <!--Menu Items-->
+    <div class="collapse navbar-collapse" id="mainNavBar">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active"><a class="nav-link" href="{% url 'beauty_services' %}" style="color: white">HOME</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" style="color: white">FOLLOW US</a></li>
+            <li class="nav-item"><a class="nav-link" href="{% url 'contact_us' %}" style="color: white">CONTACT US</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="card card-body bg-light">
+    <h3>Contact Us</h3>
+    <p>
+               3 Cinderfield Road
+        <br>   Westvale Park
+        <br>     Horley
+        <br>     Surrey
+    </p>
+</div>
+
+<div class="alert alert-warning" role="alert">
+    This is a warning alert—check it out!
+</div>
+
+<div class="alert alert-primary" role="alert">
+    This is a primary alert—check it out!
+</div>
+<div class="alert alert-secondary" role="alert">
+    This is a secondary alert—check it out!
+</div>
+<div class="alert alert-success" role="alert">
+    This is a success alert—check it out!
+</div>
+<div class="alert alert-danger" role="alert">
+    This is a danger alert—check it out!
+</div>
+<div class="alert alert-warning" role="alert">
+    This is a warning alert—check it out!
+</div>
+<div class="alert alert-info" role="alert">
+    This is a info alert—check it out!
+</div>
+<div class="alert alert-light" role="alert">
+    This is a light alert—check it out!
+</div>
+<div class="alert alert-dark" role="alert">
+    This is a dark alert—check it out!
+</div>
+</body>
+</html>
+
+{% endblock %}

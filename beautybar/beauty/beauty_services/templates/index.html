@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load static %}
+{% load embed_video_tags %}
+{% block page_content %}
+
+<html>
+    <title>BEAUTYBAR</title>
+    <head><link rel="stylesheet" type="text/css" href={% static "style.css" %}></head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#mainNavBar"  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="{% url 'beauty_services' %}" class="navbar-brand"><h3>BEAUTY BAR</h3></a>
+<!--            <div class="collapse navbar-collapse" id="mainNavBar">-->
+<!--                <ul class="navbar-nav ml-auto">-->
+<!--                    <li class="nav-item active"><a class="nav-link" href="{% url 'beauty_services' %}" style="color: #ff8080">HOME</a></li>-->
+<!--                    <li class="nav-item"><a class="nav-link" href="#" style="color: #ff8080">FOLLOW US</a></li>-->
+<!--                    <li class="nav-item"><a class="nav-link" href="{% url 'contact_us' %}" style="color: #ff8080">CONTACT US</a></li>-->
+<!--                </ul>-->
+<!--            </div>-->
+        </nav>
+            <form  autocomplete="off" class ="container" action="/action_page.php" target="_blank">
+                    <div class="autocomplete"  style="padding-top: 10px;">
+                        <label for="services">Services</label>
+                        <input type="text"  id="services" placeholder="search for services">
+                    </div>
+                    <div class="autocomplete">
+                        <label for="location">Location</label>
+                        <input type="text" id="location"  placeholder="enter location">
+                    </div>
+                        <input type="submit" value="Search" >
+            </form>
+    </body>
+
+     <script src={% static "index.js" %}>
+     </script>
+    </body>
+</html>
+
+{% endblock %}
