@@ -5,7 +5,11 @@
 
 <html>
     <title>BEAUTYBAR</title>
-    <head><link rel="stylesheet" type="text/css" href={% static "style.css" %}></head>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href={% static "style.css" %}>
+        <script type="text/javascript" src={% static "index.js" %}></script>
+    </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light">
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#mainNavBar"  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,15 +24,17 @@
 <!--                </ul>-->
 <!--            </div>-->
         </nav>
-            <form  autocomplete="off" class ="container" action="/action_page.php" target="_blank">
-                    <div class="autocomplete"  style="padding-top: 10px;">
-                        <input type="text"  id="services" placeholder="search for services">
-                    </div>
-                    <div class="autocomplete">
-                        <input type="text" id="location"  placeholder="enter location">
-                    </div>
-                        <input type="submit" value="search" >
-            </form>
+                <form  autocomplete="off" class="container" action="{% url 'services' %}">
+                        <div class="form-group"  style="padding 10px;">
+                            <input type="text"   class="form-control" id="services" placeholder="Search for services">
+                        </div>
+                        <div class="form-group">
+                            <input type="text"  class="form-control" id="location" placeholder="Enter location">
+                        </div>
+                        <div class="form-group">
+                            <input type="submit"  class="form-control" value="search">
+                        </div>
+                </form>
     </body>
 
      <script src={% static "index.js" %}>

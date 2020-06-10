@@ -12,8 +12,5 @@ def beauty_services(request):
 def contact_us(request):
     return render(request,'contact_us.html',{})
 
-def locations(request):
-    response = requests.get('https://api.postcodes.io/postcodes/RH68GR')
-
-    address = response.json()
-    return render(request, "index.html", {"address": address})
+def services(request):
+    return render(request,'services.html',{})

@@ -20,6 +20,7 @@ urlpatterns = [
 
     path('', include('beauty_services.urls')),
     path('contact_us/', include('beauty_services.urls')),
+    path('services/', include('beauty_services.urls')),
     path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),
 ]

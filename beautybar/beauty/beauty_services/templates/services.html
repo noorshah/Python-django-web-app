@@ -1,0 +1,150 @@
+{% extends "base.html" %}
+{% load static %}
+{% load embed_video_tags %}
+{% block page_content %}
+<!DOCTYPE html>
+<html>
+<title>BEAUTYBAR</title>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  type="text/css" href={% static "services.css" %}>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#mainNavBar"  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a href="{% url 'beauty_services' %}" class="navbar-brand"><h3>BEAUTY BAR</h3></a>
+    </nav>
+    <div class="container-fluid" id="searchPanel">
+        <div class="row">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Services">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Location">
+            </div>
+            <div class="col">
+                <input type="submit" class="form-control" value="Search">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="whiteArea"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 filters">
+                <h1>filters</h1>
+                <h3 id="reviews">reviews</h3>
+                <ul class="filter-list">
+                    <li><input type="checkbox">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </li>
+                    <li><input type="checkbox">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </li>
+                    <li><input type="checkbox">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </li>
+                    <li><input type="checkbox">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </li>
+                    <li><input type="checkbox">
+                        <span class="fa fa-star"></span>
+                    </li>
+                </ul>
+                <h3 id="locations">locations</h3>
+                <ul class="filter-list">
+                    <li><input type="checkbox"><label>surrey</label></li>
+                    <li><input type="checkbox"><label>sussex</label></li>
+                    <li><input type="checkbox"><label>kent</label></li>
+                    <li><input type="checkbox"><label>buckinghamshire</label></li>
+                    <li><input type="checkbox"><label>dorset</label></li>
+                </ul>
+
+            </div>
+            <div class="col-md-9 results">
+                <h1>Salons found</h1>
+                <div class="flex-container salons">
+                    <div class="salon-image">
+                        <img   src={% static "salon service 1.jpeg" %} alt="Card image cap">
+                    </div>
+                    <div class="service-list">
+                        <h4>Faizas</h4>
+                        <div class="rating">
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <ul>
+                            <li>threading</li>
+                            <li>waxing</li>
+                            <li>facial</li>
+                        </ul>
+                    </div>
+                    <div class="book-service">
+                        <button>Book</button>
+                    </div>
+                </div>
+                <div class="flex-container salons">
+                    <div class="salon-image">
+                        <img   src={% static "salon sservice 2.jpeg" %} alt="Card image cap">
+                    </div>
+                    <div class="service-list">
+                        <h4>Meha's</h4>
+                        <div class="rating">
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <ul >
+                            <li>threading</li>
+                            <li>waxing</li>
+                            <li>facial</li>
+                        </ul>
+                    </div>
+                    <div class="book-service">
+                        <button>Book</button>
+                    </div>
+                </div>
+                <div class="flex-container salons">
+                    <div class="salon-image">
+                        <img   src={% static "salon service 3.jpeg" %} alt="Card image cap">
+                    </div>
+                    <div class="service-list">
+                        <h4>Sobias</h4>
+                        <div class="rating">
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <ul >
+                            <li>threading</li>
+                            <li>waxing</li>
+                            <li>facial</li>
+                        </ul>
+                    </div>
+                    <div class="book-service">
+                        <button>Book</button>
+                    </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Footer</p>
+    </footer>
+</body>
+</html>
+{% endblock %}

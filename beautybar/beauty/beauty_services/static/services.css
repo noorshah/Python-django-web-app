@@ -1,0 +1,104 @@
+aside h1 {
+text-align: center;
+margin: 10px;
+}
+
+.results h1{
+color: #ff8080;
+font-family: "Georgia", Times, serif;
+padding-left: 30px;
+}
+
+h3 {
+color: #ff8080;
+font-family: "Georgia", Times, serif;
+padding-left: 30px;
+}
+
+div#searchPanel{
+padding: 10px;
+background-color: #ff8080;
+}
+
+div#whiteArea{
+height: 25px;
+background-color: white;
+}
+
+.filters{
+padding-left: 20px;
+color: #ff8080;
+font-family: "Georgia", Times, serif;
+}
+
+.flex-container.salons {
+margin: 25px;
+display: flex;
+
+border:none;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+@media screen and (max-width: 750px) {
+.flex-container.salons {
+ flex-direction: column;
+}
+}
+
+ul.filter-list {
+list-style: none;
+}
+
+.filters label {
+padding-left: 10px;
+}
+
+.salon-image {
+flex: 1;
+}
+.salon-image img {
+height: auto;
+width: 100%;
+object-fit: cover;
+}
+
+.service-list {
+flex: 1;
+align-items: center;
+}
+
+.book-service {
+flex: 1;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.book-service button {
+ background-color: #ff8080;
+  border: none;
+  border-radius: 5px;
+ text-align: center;
+ color: white;
+ padding: 15px 32px;
+ margin: 20px;
+}
+
+h4 {
+padding-top: 20px;
+padding-left: 30px;
+color: #ff8080;
+font-family: "Georgia", Times, serif;
+}
+
+.service-list  ul{
+color: #ff8080;
+font-family: "Georgia", Times, serif;
+}
+
+.rating {
+color: #ff8080;
+padding-left:30px;
+padding-bottom: 10px;
+}
+
